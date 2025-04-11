@@ -1,0 +1,45 @@
+import { Visitor, Message, MarkdownElement, MarkdownContent } from './interfaces';
+import { ChatMessage } from '../component/ChatMessages/interfaces';
+import { Attendant, AttendantStatus } from '../component/interfaces';
+export declare class WebSocketService {
+    private ws;
+    private url;
+    private callbackOnReceiveMessage;
+    private callbackAttendantTyping;
+    private callbackOnAttendantJoin;
+    private callbackOnAttendantLeave;
+    private callbackSetAttendantStatus;
+    private callbackOnChatClosed;
+    private subscriptions;
+    private attendants;
+    constructor(props: {
+        visitor: Visitor;
+        onMessage: (message: ChatMessage) => void;
+        onAttendantType: (attendant: Attendant) => void;
+        onAttendantJoin: (attendant: Attendant) => void;
+        onAttendantLeave: (attendant: Attendant) => void;
+        onAttendantChangeStatus: (status: AttendantStatus) => void;
+        onChatClosed: () => void;
+        url: URL;
+    });
+    connect(): void;
+    isConnected(): boolean;
+    disconnect(): void;
+    private unsubscribe;
+    private getSubscriptionId;
+    private pong;
+    configListeners(token: string, room: string): void;
+    private subscribe;
+    private onMessage;
+    getPublicFilePath(message: Message): string;
+    parseToChatMessage(message: Message): ChatMessage;
+    formatMarkdownToContent(markdown: MarkdownElement[]): string;
+    renderMarkdownElement(element: MarkdownElement): string;
+    static renderMarkdownContent(content: MarkdownContent): string;
+    getAvatarSrc(username: string): string;
+    private getMessageDate;
+    private isSystemMessage;
+    private isUserMessage;
+    private canPreviewAttachment;
+    private parseToChatSystemMessage;
+}

@@ -1,0 +1,18 @@
+import { Color, Padding, Spacing } from '../../util';
+import { CustomColor, AvatarVariantSize, Avatarfields } from './interfaces';
+export declare function getCustomColor(props: CustomColor): Color;
+export declare function getVariantSpacing(variant: AvatarVariantSize): Spacing;
+export declare function getBadgeStyle(variant: AvatarVariantSize): "13.5px" | "9px";
+export declare function getVariantPadding(variant: AvatarVariantSize): Padding;
+export declare function getBadgeMarginSizeStyle(variant: AvatarVariantSize): "15.8%" | "15.5%" | "16.5%";
+export declare const getSizeAvatar: import("styled-components").FlattenInterpolation<import("styled-components").ThemedStyledProps<Avatarfields, import("styled-components").DefaultTheme>>;
+export declare const getIconProfileCentralized: import("styled-components").FlattenInterpolation<import("styled-components").ThemedStyledProps<Avatarfields, import("styled-components").DefaultTheme>>;
+export declare const getSizeBadge: import("styled-components").FlattenInterpolation<import("styled-components").ThemedStyledProps<Avatarfields, import("styled-components").DefaultTheme>>;
+export declare const getSizeProfileIcon: import("styled-components").FlattenInterpolation<import("styled-components").ThemedStyledProps<Avatarfields, import("styled-components").DefaultTheme>>;
+export declare const getSize: import("styled-components").FlattenInterpolation<import("styled-components").ThemedStyledProps<Avatarfields, import("styled-components").DefaultTheme>>;
+export declare const getSizeProfileImg: import("styled-components").FlattenInterpolation<import("styled-components").ThemedStyledProps<Avatarfields, import("styled-components").DefaultTheme>>;
+export declare const CustomAvatar: import("styled-components").StyledComponent<"div", import("styled-components").DefaultTheme, Avatarfields, never>;
+export declare const BadgeDiv: import("styled-components").StyledComponent<"div", import("styled-components").DefaultTheme, Avatarfields, never>;
+export declare const ProfileDiv: import("styled-components").StyledComponent<"div", import("styled-components").DefaultTheme, Avatarfields, never>;
+export declare const ProfileDivImg: import("styled-components").StyledComponent<"div", import("styled-components").DefaultTheme, Avatarfields, never>;
+export declare const ProfileImg: import("styled-components").StyledComponent<"img", import("styled-components").DefaultTheme, Avatarfields, never>;

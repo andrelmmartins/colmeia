@@ -1,0 +1,19 @@
+{
+  "name": "@andrelmmartins/colmeia.icons",
+  "version": "0.0.10",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.types.d.ts",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "files": [
+    "./dist"
+  ],
+  "dependencies": {
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.10"
+  }
+}

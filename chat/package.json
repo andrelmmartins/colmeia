@@ -1,0 +1,28 @@
+{
+  "name": "@andrelmmartins/colmeia.chat",
+  "version": "0.0.2",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.types.d.ts",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "files": [
+    "./dist"
+  ],
+  "dependencies": {
+    "react": "^18.2.0",
+    "axios": "^1.8.4",
+    "moment": "^2.29.4",
+    "styled-components": "^5.3.5",
+    "uuid": "^9.0.0",
+    "react-dropzone": "^14.3.8",
+    "react-input-mask": "3.0.0-alpha.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.10",
+    "@types/styled-components": "^5.1.25",
+    "@types/uuid": "^9.0.1",
+    "@types/react-input-mask": "3.0.2"
+  }
+}
